@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <style>
+ body{background-image:url("man.jpg");
+      
+     }
+ center{font-size:30px; text-align:center;
+   }	
+  table,tr,td{border:1px ;border-collapse:collapse;
+  }
+input[type=submit] {
+    width:20%;
+    background-color:#00FFFF;
+	color:black;
+	padding:14px 20px;
+	margin:8px 0;
+	border:none;
+	border-radius:4px;
+}
+input[type=reset] {
+    width:20%;
+    background-color:#00FFFF;
+	color:black;
+	padding:14px 20px;
+	margin:8px 0;
+	border:none;
+	border-radius:4px;
+}
+ 
+ </style>
+  <title>Registration</title>
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+ </head>
+ <body>
+  	<form action="empreg_post.php" method="POST" onSubmit='return valid()'>
+		<table width="600" align="center" height="400">
+			<tr>
+				<td align="center"></td>
+			</tr>
+			<tr>
+				<td>
+					<center>Udyogi Registration</center>
+				</td>
+			</tr>
+			<tr><td>&nbsp;</td>
+			</tr>
+			<tr><td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">UserName : </font>
+				</td>
+				<td>
+					<input type="text" name="uname" id="uname" placeholder="Enter your Name">
+				</td>
+		    </tr>
+			<tr>
+				<td align="left">
+					<font size="4">Email Id : </font>
+				</td>
+				<td>
+					<input type="text" name="email" id="email" placeholder="Enter your Mail ID">
+				</td>
+		    </tr>
+			<tr>
+				<td align="left">
+					<font size="4">Age</font>
+				</td>
+				<td>
+					<input type="text" name="age" id="age" size="3" placeholder="Enter your age">
+					
+				</td>
+			</tr>
+			<tr>
+			<td align="left">
+					<font size="4">Date of birth</font>
+				</td>
+				<td>
+					<input type="date" name="dob" size="10">
+					
+				</td>
+				</tr>
+			<tr>
+				<td align="left">
+					<font size="4">Gender</font>
+				</td>
+				<td colspan="4">
+					<font size="3" face="Times new roman">
+					 		<select  name="gender" id="gen">
+								<option value="none"> Please select any one</option>
+								<option value="M"> Male </option>
+								<option value="F"> Female </option>
+								<option value="O"> Others </option>
+							</select>	
+					</font>			
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">City : </font>
+				</td>
+				<td>
+					<input type="text" name="city" id="city" size="30" placeholder="Enter your Current city">
+				</td>
+		    </tr>			
+			<tr>
+				<td align="left">
+					<font size="4">Mobile Number</font>
+				</td>
+				<td>
+					<input type="text" name="mobile" id="mobile" size="10" placeholder="Enter your mobile number">
+					
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">Aadhar no : </font>
+				</td>
+				<td>
+					<input type="text" name="aadhar" id="aadhar" size="15" placeholder="Enter your Aadhar card number">
+					
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">Skill 1</font>
+				</td>
+				<td>
+					<font size="3" face="Times new roman">
+					 		<select  name="skill1" id="skill1">
+								<option value="none"> Please select any one</option>
+								<option value="carpenter"> Carpenter </option>
+								<option value="pumber"> Plumber </option>
+								<option value="cook"> Cook </option>
+								<option value="coder"> Coder </option>
+								<option value="electrician"> Electrician </option>
+							</select>	
+					</font>			
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">Skill 2</font>
+				</td>
+				<td>
+					<font size="3" face="Times new roman">
+					 		<select  name="skill2" id="skill2">
+								<option value="none"> Please select any one</option>
+								<option value="carpenter"> Carpenter </option>
+								<option value="pumber"> Plumber </option>
+								<option value="cook"> Cook </option>
+								<option value="coder"> Coder </option>
+								<option value="electrician"> Electrician </option>
+							</select>	
+					</font>			
+				</td>
+			<
+			<tr>
+				<td align="left">
+					<font size="4">Skill 3</font>
+				</td>
+				<td>
+					<font size="3" face="Times new roman">
+					 		<select  name="skill3" id="skill3">
+								<option value="none"> Please select any one</option>
+								<option value="carpenter"> Carpenter </option>
+								<option value="pumber"> Plumber </option>
+								<option value="cook"> Cook </option>
+								<option value="coder"> Coder </option>
+								<option value="electrician"> Electrician </option>
+							</select>	
+					</font>			
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">About Yourself : </font>
+				</td>
+				<td>
+					<textarea name="about" id="about" rows="5" cols="40" placeholder="Tell us something about you"></textarea>
+					
+				</td>
+		    </tr>
+			<tr>
+				<td align="left">
+					<font size="4">Create Password</font>
+				</td>
+				<td>
+					<input type="password" name="password" id="pass" placeholder="Enter a password">
+					
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<font size="4">Confirm Password</font>
+				</td>
+				<td>
+					<input type="password" name="cpassword" id="cpass" placeholder="Re-Enter the password">
+					
+				</td>
+			</tr>			
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Register">
+				<input type='reset' name="clear" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+<script type="text/javascript">
+
+function valid()
+{
+	var uname  = document.getElementById('uname').value;
+	var email = document.getElementById('email').value;
+	var age	=   document.getElementById('age').value;
+	var gen = document.getElementById('gen').value;
+	var city = document.getElementById('city').value;
+	var mobile = document.getElementById('mobile').value;
+	var aadhar = document.getElementById('aadhar').value;
+	var skill1 = document.getElementById('skill1').value;
+	var skill2 = document.getElementById('skill2').value;
+	var skill3 = document.getElementById('skill3').value;
+	var about = document.getElementById('about').value;
+	var pass  = document.getElementById('pass').value;
+	var cpass = document.getElementById('cpass').value;
+	
+	
+
+	//Validate UserName - Empty Check & Only 4 Characters Check
+  
+   if(uname == "") 
+	{ 
+	   alert("First Name should not be Empty!"); 
+	   return false;
+	 }
+
+	 var unm = /^[A-Za-z]{4,30}$/;  
+   if(!unm.test(uname)) 
+	{ 
+		alert("Invalid Name! Name should contain only characters and should contain a minimum of 4 characters & maximum of 30 characters"); 
+
+		return false;
+   }
+   
+   if(email == "") 
+   { 
+	   alert("Email should not be Empty!"); 
+	   return false;
+	}
+   var atpos = email.indexOf("@"); //get the position of @ in the input email string
+   
+   var dotpos = email.lastIndexOf("."); //get the position (last occurrence) of .
+  
+   //Checks Min 2 chars in email name (ravi/abc12), domain name (gmail/yahoo) and domain type (.com/.net)
+ 
+   if (atpos < 2 || dotpos <= atpos+2 || dotpos+2 >= email.length)   
+      {
+        alert("In-valid E-mail Address!");
+        return false;
+      }
+	
+//Validation of Age
+
+	if(age == "") 
+	{ 
+	   alert("age should not be Empty!"); 
+	   return false;
+	 }
+	if ( !( age > 1 && age<100 ) )
+	{
+
+        alert("The age must be a number between 1 and 100");
+        return false;
+}
+	
+//Validation of gender
+	if(gen == "Please select any one") 
+	{ 
+	   alert("Gender should not be Empty! Please Select Anyone"); 
+	   return false;
+	 }
+
+   //Validation of City
+   
+   if(city == "") 
+	{ 
+	   alert("city Name should not be Empty!"); 
+	   return false;
+	 }
+
+	 var cit = /^[A-Za-z ]{2,30}$/;  
+   if(!cit.test(city)) 
+	{ 
+		alert("Invalid City! City should contain only characters & spaces.and should contain a minimum of 3 characters & maximum of 30 characters"); 
+
+		return false;
+   }
+   
+   //Validation of  Mobile 
+   if(mobile == "") 
+   { 
+	   alert("Mobile should not be Empty!"); 
+	   return false;
+	}
+  
+   var mb = /^[0-9]{10}$/; //match a value with exactly 10 digits 
+   if(!mb.test(mobile)) 
+	{ 
+	   alert("Invalid Mobile Number! Enter a valid 10 Digit Mobile Number"); 
+	   return false;
+	 }
+//Validation of  Aadhar 
+   if(aadhar == "") 
+   { 
+	   alert("Aadhar Number should not be Empty!"); 
+	   return false;
+	}
+  
+   var adhar = /^[0-9]{12}$/; //match a value with exactly 12 digits 
+   if(!adhar.test(aadhar)) 
+	{ 
+	   alert("Invalid Aadhar Number! Enter a valid 12 Digit Mobile Number"); 
+	   return false;
+	 }
+	//Validation of  about
+if(about == "") 
+	{ 
+	   alert("About field should not be Empty!"); 
+	   return false;
+	 }
+
+	  
+   //Validation of  password
+   if(pass == "") 
+	{ 
+	   alert("Password should not be Empty!"); 
+	   return false;
+	 }
+   
+   var pswd = /^[0-9A-Za-z@ ]{5,15}$/;  
+   if(!pswd.test(pass)) 
+	{ 
+		alert("Invalid Password! Password contain minimum 5 characters"); 
+
+		return false;
+   }
+   
+   if(pass!=cpass)
+	{
+	   alert("given password is mismatch");
+	   return false;
+	}
+
+
+	
+	return true; 
+   }
+
+</script>	
+	
+	
+ </body>
+</html>
